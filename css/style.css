@@ -1,0 +1,107 @@
+/*Imports*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+/*style*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Concert One', cursive;
+}
+
+body {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.wrap {
+    margin: auto;
+    max-width: 1440px;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+
+#hero {
+    background-attachment: fixed;
+}
+
+#hero {
+    width: 100%;
+    height: 80vh;
+    background: url(../imagens/pizza-hero.jpg) top center;
+    background-size: cover;
+    position: relative;
+    border-bottom: 1px solid #222;
+    ;
+}
+
+#hero::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+
+#hero h1,
+#hero h2 {
+    color: #fff;
+    text-shadow: -6px 5px #222;
+}
+
+#hero h1 {
+    font-size: 68px;
+}
+
+#hero .btn-get-started {
+    margin: 30px auto 0px auto;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: 2px solid #4eb478;
+    color: #fff;
+}
+#hero .btn-get-started:hover {
+    background: #B34D24;
+    border: 2px solid #da9f20;
+}
+#header{
+    background: #000;
+    height: 70px;
+    transition: all 0.5s;
+    z-index: 997;
+}
+#header .logo a {
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    #hero {
+        height: 100vh;
+
+    }
+}
